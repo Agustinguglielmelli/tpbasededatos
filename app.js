@@ -48,7 +48,7 @@ app.get('/buscar', (req, res) => {
 });
 
 // Ruta para buscar actor por pelicula
-app.get('/buscarActor', (req, res) => {
+app.get('/buscarActor', (req, res) => { // cambio
     const searchTerm = req.query.q;
     const query = `
         select m.title
